@@ -7,7 +7,7 @@
 .main_div {
   width: 100%;
   height: 100vh;
-  background: #7bed9f;
+  background: space grey;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,11 +18,12 @@
   width: 25%;
   height: 70vh;
   background-color: #f4f4f4;
-  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 12);
   border-radius: 15px;
+  border: 2px solid black;
 }
 h1 {
-  color: rgba(0, 0, 0, 0.87);
+  color:dark grey;
   font-size: 50px;
   margin-bottom: 30px;
   min-width: 64px;
@@ -42,20 +43,20 @@ input {
   font-size: 20px;
   font-weight: 500;
   width: 60%;
-  border-bottom: 2px solid #8566aa;
+  border-bottom: 2px solid grey;
   outline: none;
   margin-right: 20px;
 }
 .newBtn {
-  width: 50px;
-  height: 55px;
-  background-color: #16a085 !important;
+  width: 20px;
+  height: 40px;
+  background-color: grey  !important;
   color: white !important;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-  border-radius: 50% !important;
-}
+  border-radius: 10%  !important;
+ }
 .newBtn:hover {
-  color: #16a085 !important;
+  color: black !important;
   background: white !important;
 }
 /* //the add symbol inside the button in app comp */
@@ -75,7 +76,7 @@ ol li {
   min-height: 40px;
   display: flex;
   align-items: center;
-  color: #8566aa;
+  color: black;
   text-transform: capitalize;
   list-style: none;
 }
@@ -91,11 +92,10 @@ ol li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8566aa;
-  border-radius: 50%;
+  background-color: grey;
+  border-radius: 30%;
   margin: 0 15px 0 35px;
   padding: 5px;
-  color: aliceblue;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 .todo_style .deleteIcon:hover {

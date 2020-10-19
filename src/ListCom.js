@@ -16,4 +16,4 @@ const ListCom = (props) => {
     </div>
   );
 };
-export default ListCom
+export default ListCom;

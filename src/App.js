@@ -3,11 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import ListCom from './ListCom';
 import Button from '@material-ui/core/Button';
-import AddIcon from '@material-ui/icons/Add';
+import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 
 
 function App() {
-  const [item,setItem]=useState("Add an Item");
+  const [item,setItem]=useState();
   const [newItem,setNewItem]=useState([]);
   const itemEvent=(event)=>{
   setItem(event.target.value)
@@ -16,7 +16,7 @@ function App() {
   setNewItem((preValue)=>{
   return[...preValue,item];
   });
-  setItem("");
+   setItem(" ");
   };
   return (
   <>
@@ -26,9 +26,9 @@ function App() {
       <h1>ToDo List</h1>
       <br/>
       <input type="text" value={item}
-      placeholder="Add an Item" onChange={itemEvent}/>
+      placeholder="Add New Item" onChange={itemEvent} />
       <Button className="newBtn" onClick={listOfItems}>
-      <AddIcon/>
+      <LibraryAddIcon/>
       </Button>
       <br/>
       <ol>
